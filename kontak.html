@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UKM UNIVERSITAS PAMULANG RUMUS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+body{
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*.gallery*/
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	background-color: #2a2932;
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin:0 10px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: #ff9800;
+	border-color : #ff9800;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 767px){
+    .gallery .gallery-item{
+		width: 100%;
+	}	
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}
+.gerik{
+background:white;
+margin-top: -190px;
+}
+.logo{
+  margin-left: 160px;
+  margin-right: auto;
+  height:70% ;
+  width: 70px;
+  
+}
+.kontak1{
+  margin-left: 5px;
+  margin-right: auto;
+  height:200px ;
+  max-width: 170px;
+  width: 160px;
+  border-radius: 100px 100px 100px 100px;
+  margin-top: 50px;
+}
+.kontak2{
+  margin-left: 5px;
+  margin-right: auto;
+  height:200px ;
+  max-width: 170px;
+  border-radius: 100px 100px 100px 100px;
+  margin-top: 150px;
+width: 140px;
+}
+.kontak3{
+  margin-left: 5px;
+  margin-right: auto;
+  height:200px ;
+  max-width: 170px;
+  border-radius: 100px 100px 100px 100px;
+  margin-top: 150px;
+}
+h3{
+  color: red;
+}
+i{
+  color:white;
+}
+p{
+  color: white;
+}
+.whatsapp{
+  margin-left: 5px;
+  margin-right: auto;
+height:50px ;
+max-width: 70px;
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+  <img src="Logo-rumus.jpg" alt="logo-ldii-jatim.png" class="logo"/>
+
+<section class="gallery">
+<marquee behavior="scroll"direction="left" class="gerik">
+    <h4>WELCOME TO THE CONTACT-US ...☎️</h4></marquee>
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+<img src="Fhoto-pembina.jpg"class="kontak1">
+<h3>KETUA PEMBINA UKM RUMUS</h3>
+<i>ROBBY KHARISMA S.Pd.I, M.Pd </i>
+<p>No Telephone : <u>+6281382018574</u></p>
+<img src="Fhoto-whatsapp.png" class="whatsapp"onclick="whatsapp()">
+<p>Klik whatsapp</p>
+
+<img src="Fhoto-ketua.jpg"class="kontak2">
+<h3>KETUA UKM RUMUS</h3>
+<i>AKBAR ZIDAN</i>
+<p>No Telephone : <u>+6285776130118</u></p>
+<img src="Fhoto-whatsapp.png" class="whatsapp"onclick="whatsapp2()">
+<p>Klik whatsapp</p>
+
+<img src="Fhoto-wakil.jpg"class="kontak3">
+<h3>WAKIL KETUA UKM RUMUS</h3>
+<i>FADILLAH</i>
+<p>No Telephone : <u>+6285776986350</u></p>
+<img src="Fhoto-whatsapp.png" class="whatsapp"onclick="whatsapp3()">
+<p>Klik whatsapp</p>
+</div>
+</div>
+</div>
+</section>
+<script>
+			function whatsapp() {
+				window.location.href = "https://wa.me/+6281382018574?text=Bapak%20ROBBY%20KHARISMA%20PEMBINA%20UKM RUMUS%20UNIVERSITAS PAMULANG"}
+</script>
+<script>
+			function whatsapp2() {
+				window.location.href = "https://wa.me/6285776130118?text=AKBAR ZIDAN%20KETUA UKM RUMUS UNIVERSITAS PAMULANG"}
+</script>
+<script>
+			function whatsapp3() {
+				window.location.href = "https://wa.me/+6285776986350?text=FADILLAH%20WAKIL UKM RUMUS UNIVERSITAS PAMULANG"}
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

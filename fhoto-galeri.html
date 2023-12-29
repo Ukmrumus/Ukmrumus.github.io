@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UKM UNIVERSITAS PAMULANG RUMUS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+body{
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+/*.gallery*/
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	background-color: #2a2932;
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin:0 10px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: #ff9800;
+	border-color : #ff9800;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 767px){
+    .gallery .gallery-item{
+		width: 100%;
+	}	
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}
+.gerik{
+background:white;
+}
+.logo{
+  margin-left: 160px;
+  margin-right: auto;
+  height:80px;
+  max-width: 80px;
+}
+</style>
+</head>
+<body>
+  <img src="Logo-rumus.jpg" alt="shoe" class="logo"/>
+<section class="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+<marquee behavior="scroll"direction="left" class="gerik">
+    <h4>Welcome to the gallery...</h4></marquee>
+				<span class="filter-item active" data-filter="all">ALL ANGGOTA PROGRAM KERJA DIVISI UKM RUMUS</span>
+				<span class="filter-item" data-filter="guru">DOKUMENTASI UKM RUMUS UNPAM</span>
+				<span class="filter-item" data-filter="kbm">PELATIHAN-PELATIHAN BIDANG KEAHLIAN RUMUS</span>
+				<span class="filter-item" data-filter="headphone">DOKUMENTASI </span>
+			</div>
+		</div>
+		<div class="row">
+			<!-- gallery item start -->
+			<div class="gallery-item shoe">
+				<div class="gallery-item-inner">
+					<img src="img_14_1682767162207.jpg" alt="shoe">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item guru">
+				<div class="gallery-item-inner">
+					<img src="img/img_3_1682766946459.jpg" alt="guru">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item camera">
+				<div class="gallery-item-inner">
+					<img src="img/img_1_1682779953088.jpg" alt="camera">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item headphone">
+				<div class="gallery-item-inner">
+					<img src="img_1_1682790178871.jpg" alt="headphone">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item guru">
+				<div class="gallery-item-inner">
+					<img src="img_8_1682767053338.jpg" alt="guru">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item kbm">
+				<div class="gallery-item-inner">
+					<img src="img_4_1682766962284.jpg" alt="kbm">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item kbm">
+				<div class="gallery-item-inner">
+					<img src="img_12_1682767125419.jpg" alt="kbm">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item prestasi">
+				<div class="gallery-item-inner">
+					<img src="f1bed83d472b4c908eafacaefc67635a_37247968_421542258355816_8816603398011879424_n.jpg" alt="prestasi">
+				</div>
+			</div>
+			<!-- gallery item end -->
+		</div>
+	</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
