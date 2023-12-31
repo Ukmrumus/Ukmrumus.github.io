@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-
 body{
 	line-height: 1.5;
 	font-family: sans-serif;
+	
 }
 *{
 	margin:0;
@@ -31,7 +31,7 @@ img{
 	width: 100%;
 	display: block;
 	min-height: 100vh;
-	background-color: #2a2932;
+	background-color:#FFFFFF;
 	padding: 100px 0;
 }
 .gallery .gallery-filter{
@@ -41,7 +41,7 @@ img{
 	margin-bottom: 20px;
 }
 .gallery .gallery-filter .filter-item{
-	color: #ffffff;
+	color: black;
 	font-size: 12px;
 	text-transform: uppercase;
 	display: inline-block;
@@ -50,18 +50,21 @@ img{
 	border-bottom: 2px solid transparent;
 	line-height: 1.2;
 	transition: all 0.3s ease;
-	font-family: Times New Roman;
+  font-family:sans-serif;
 }
 .gallery .gallery-filter .filter-item.active{
-	color: #ff9800;
-	border-color : #ff9800;
+	color: black;
+	border-color : red;
 }
 .gallery .gallery-item{
 	width: calc(100% / 3);
 	padding: 15px;
+  
 }
 .gallery .gallery-item-inner img{
 	width: 100%;
+  height:270px ;
+box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
 }
 .gallery .gallery-item.show{
 	animation: fadeIn 0.5s ease;
@@ -93,24 +96,35 @@ img{
 	}
 }
 .gerik{
-background:white;
+background:black;
+padding-bottom:20px;
+}
+h4{
+color: white;
+margin-top:20px;
+font-family:'Tangerine',cursive;
+font-size: 20px;
 }
 .logo{
   margin-left: 160px;
   margin-right: auto;
-  height:80px;
-  max-width: 80px;
+  height:90px ;
+  width: 90px;
+span{
+  color: black;
 }
+
 </style>
+	<marquee behavior="scroll"direction="left" class="gerik">
+    <h4>Welcome to the gallery...</h4></marquee>
 </head>
-<body>
+<body  style="background-color:#5F9EA0;"  >
   <img src="Logo-rumus.jpg" alt="shoe" class="logo"/>
 <section class="gallery">
 	<div class="container">
 		<div class="row">
 			<div class="gallery-filter">
-<marquee behavior="scroll"direction="left" class="gerik">
-    <h4>Welcome to the gallery...</h4></marquee>
+
 				<span class="filter-item active" data-filter="all">DOKUMENTASI 1</span>
 				<span class="filter-item" data-filter="guru">DOKUMENTASI 2</span>
 				<span class="filter-item" data-filter="kbm">DOKUMENTASI 3</span>
