@@ -1,41 +1,623 @@
-<!DOCTYPE html>
- <html class="no-js"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>DEMO3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css">
+
+<html>
+  <head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UKM UNIVERSITAS PAMULANG RUMUS</title>
+<style type="text/css">
+*,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+	}
+
+header{
+  background:#5F9EA0;
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+}
+a{
+  color: #eaeaea;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+  margin-left: 17px;
+  margin-right: auto;
+  margin-left: auto;
+}
+li profil{
+  display: inline-block;
+  }
+li a:hover{
+  color: red;
+  transform:rotate(2deg);
+}
+nav ul{
+  display: flex;
+  padding: 3px;
+}
+nav{
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 95%;
+  height: 55px;
+  background:#5F9EA0;
+  margin-bottom:20px;
+  border-radius:50px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9)
+}
+.logo{
+  margin-left: 20px;
+  margin-right: auto;
+  height:50px ;
+  width:50px;
+  margin-bottom: 15px;
+}
+ul li{
+  
+}
+.button{
+  margin-right: 5px;
+  border: none;
+  font-size: 30px;
+  padding: 6px 12px;
+  background: orange;
+  border-radius: 10px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+}
+.button:hover{
+  color: red;
+  transform: rotate(2deg);
+}
+.tabel-beranda-menu{
+  margin-right: auto;
+  margin-left: auto;
+  height:70% ;
+  max-width: 25px;
+  width: 20px;
+  }
+  .lokasi{
+  margin-right: auto;
+  margin-left: auto;
+  height:70% ;
+  max-width: 30px;
+  width: 35px;
+  }
+  .instagram{
+  margin-right: auto;
+  margin-left: auto;
+  height:70% ;
+  max-width: 35px;
+  width: 35px;
+  }
+  .fhoto-dokumentasi{
+   margin-right: auto;
+   margin-left: auto;
+   width: 300px;
+   height:150px;
+  }
+  .fhoto-logo-rumus{
+   margin-right: auto;
+   margin-left: auto;
+   width: 150px;
+   height:150px;
+   margin-bottom:50px;
+  }
+  .fhoto-struktur{
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height:500px;
+  margin-top:20px;
+  margin-bottom:20px;
+  box-shadow:0 10px 10px 0 rgba(1,1,1,.9);
+  }
+  }
+  .fhoto-guru{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 350px;
+  box-shadow:0 10px 10px 0 rgba(1,1,1,.9);
+  }
+  .fhoto-daftar{
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 250px;
+   border-radius: 150px 150px 150px 150px;
+   margin-top:-50px;
+   margin-bottom: -20px;
+  
+  }
+.profil:hover{
+  background-color: orange;
+  transform: rotate(2deg);
+  border-radius: 10px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+  cursor: pointer;
+  }
+.intro{
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  }
+.progres1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 390px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction:column;
+}
+.progres2{
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-direction:column;
+
+}
+.judul1{
+  font-size: 15px;
+  font-weight: bolder;
+  background-color:#D2B48C;
+  margin-bottom: 90px;
+  margin-top: -10px;
+  padding-top: 20px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+
+}
+
+.judul2{
+  font-size: 15px;
+  font-weight: bolder;
+  background-color:#D2B48C;
+  margin-bottom: 90px;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-shadow: 1px 1px 1px white;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+  border-radius: 0px 0px 80px 80px;
+
+}
+
+.description{
+  font-size: 15px;
+   margin-top: 20px;
+
+  color:black;
+  font-style: normal;
+  
+  font-weight: lighter;
+  text-align: left;
+  line-height: 30px;
+}
+
+.persyaratan{
+   font-size:15px;
+   margin-top: 20px;
+   color:black;
+   font-style: bolder;
+   
+   font-weight: lighter;
+   text-align: left;
+   line-height: 30px;
+     }
+
+input{
+  border-radius:5px;
+  background: orange;
+  text-align: center;
+}
+p{
+  color:black;
+  font-size: 13px;
+  padding-bottom: 25px;
+  padding-top: -25px;
+  }
+  b{
+  color:black;
+  font-size: 9px;
+  padding-bottom: 25px;
+  padding-top: -25px;
+  }
+
+.toggle-sidebar {
+  margin-left: auto;
+  margin-right: 20px;
+  height:50% ;
+  max-width: 40px;
+  cursor: pointer;
+  }
+.toggle-sidebar:hover{
+  transform: rotate(2deg);
+}
+.sidebar li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid silver;
+  transition: background-color 0.5s;
+}
+.sidebar li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.sidebar {
+  height: 400px;
+  width: 200px;
+  list-style: none;
+  background-color: #eaeaea;
+  position: fixed;
+  left: -200px;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow:0 5px 5px 0 rgba(1,1,1,.9);
+  
+}
+.sidebar-open {
+  left: 0;
+}
+.menu{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:20px ;
+}
+
+h1{
+  font-size: 12px;
+  color: black;
+
+  font-style: border;
+}
+h3{
+  font-size: 10px;
+  color: black;
+  font-family:'Times New Roman';
+}
+.btn-cta {
+	margin-right: 10px;
+	margin-top:40px;
+	border: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	background:red;
+	color: white;
+        text-shadow:1px 1px 1px black;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom:25px;
+}
+	.btn-cta-daftar{
+        margin-right: 10px;
+   	margin-top:80px;
+	border: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	background:red;
+	color: white;
+        text-shadow:1px 1px 1px black;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom:25px;
+	}
+.btn-cta:hover {
+  background-color:red;
+}
+footer {
+    text-align:center;
+     padding: 5px;
+     margin-bottom:100px ;
+     background-color: #abbaba;
+     color: #000;
+     margin-top:80px ;
+     box-shadow:0 10px 10px 0 rgba(1,1,1,.9);
+}
+.carousel-inner{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 350px;
+  box-shadow:0 10px 10px 0 rgba(1,1,1,.9);
+  background-color:white;
+}
+.open{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  height:130% ;
+  max-width: 130px;
+  width: 130px;
+  }
+.open {
+ color:red;
+ font-size: 23px;
+  padding-bottom: 25px;
+  padding-top: -25px;
+  text-shadow: 1px 1px 1px black;
+  font-family:'Tangerine',cursive;
+}
+h4{
+  font-size: 15px;
+  color: white;
+  margin-bottom:20px;
+}
+.gerik{
+background:black;
+padding-top: 23px;
+}
+small{
+  font-size: 10px;
+  color: black;
+  font-family:'Times New Roman';
+  font-style: border;
+}
+.klik-daftar{
+  margin-top:20px;
+}
+	.panah{
+max-width: 65px;
+margin-top:-60px;
+margin-bottom:-100px;
+}
+.lomba{
+max-width: 350px;
+margin-top:-60px;
+margin-bottom:-100px;
+}
+</style>
+ 
         <link rel="stylesheet" href="demo.css">
         <link rel="stylesheet" href="fakeLoader.min.css">
-    </head>
-    <body>
-        <div class="fakeloader"></div>
-       <section id="section-navigation">
-<a href="index.html"><button class="btn-default btn-white btn-active">OPEN</button></a>
-        </div>
-        </section>
+  </head>
+  <body>
+ <header>
+<marquee behavior="scroll"direction="left" class="gerik">
+    <h4>WELCOME TO OUR UNIT KEGIATAN MAHASISWA ( UKM ) UNIVESITAS PAMULANG ( UNPAM ) -------> RUANG MUSIK -------> ( RUMUS ) </h4></marquee>
+  <img src="Logo-unpam.png" alt="Logo-rumus.jpg" class="logo"/>
+      <nav>
+        <ul>
+          <li><a href="#ppg"><img src="Fhoto-home.png"class="tabel-beranda-menu"></a><h1 oncanplaythrough="">Home</h1></li>
+          
+          <li><a href=""><img src="Fhoto-instagram.png"class="instagram"></a><h1 oncanplaythrough="">instagram</h1></li>
+          
+          <li><a href=""><img src="Logo-Facebook-PNG.png"class="tabel-beranda-menu"></a><h1 oncanplaythrough="">Facebook</h1></li>
+          
+          <li><a href=""><img src="Fhoto-youtube.png"class="tabel-beranda-menu"></a><h1 oncanplaythrough="">Youtube</h1></li>
+          
+          <li><a href="https://maps.app.goo.gl/YeBgTe4V1DYrR1Ra9"><img src="Fhoto-lokasi.png"class="lokasi"></a><h1 oncanplaythrough="">Lokasi</h1></li>
+          
+         <li><a href="kontak.html"><img src="Fhoto-kontak.png"class="tabel-beranda-menu"></a><h1 oncanplaythrough="">Kontak</h1></li>
+         
+         <li><a href="fhoto-galeri.html"><img src="Fhoto-galleri.png"class="tabel-beranda-menu"></a><h1 oncanplaythrough="#">Gallery</h1></li>
 
-        <div class="container text-center">
-            <script async type="text/javascript"
-                src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
-            </div>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </ul>
+      </nav>
+      
+<img src="sidebar-2.png" class="toggle-sidebar" id="toggle-sidebar"/>
+</header>
+
+<ul class="sidebar">
+ <img src="Logo-rumus.jpg" class="menu">
+    <li><a href="https://drive.google.com/file/d/1-Fidb1M6S-xt8DGpVvQEFeAagQpSKJ8Z/view?usp=drivesdk">STRUKTUR RUMUS PDF</a></li>
+    <li><a href="https://drive.google.com/file/d/1-hqUAMKcaYShwcihkaGmGa5kBdfyjK2c/view?usp=drivesdk">PROPOSAL RUMUS PDF</a></li>
+  </ul>
+  
+  
+<script>
+const toggleSidebar = document.querySelector("#toggle-sidebar");
+const sidebar = document.querySelector(".sidebar");
+
+toggleSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-open");
+});
+</script>
+    
+
+</form> 
+<div class="progres1">
+  <div class="progres2">
+
+
+ 
+    <p class="judul1" id="ppg"data-aos="fade-up"
+     data-aos-duration="1000">UNIT KEGIATAN MAHASISWA ( UKM ) UNIVESITAS PAMULANG ( UNPAM ) RUANG MUSIK ( RUMUS )</p>
+
+              <img src="Logo-rumus.jpg" class="fhoto-logo-rumus">
+<p class="description">Musik turut berperan penting dalam dunia pendidikan. dengan  bermusik maka
+kita menciptakan sebuah Karya. Kemampuan dalam  bermusik juga dapat
+mengembangkan suatu kreatifitas anak Bangsa dan dengan bermusik kita dapat
+menyampaikan Sebuah gagasan atau Ungkapan yang dapat disampaikan Secara
+lisan. Mahasiswa sebagai insan akademik, diwajibkan memiliki kemampuan
+dalam Berkreatifitas dalam bentuk Sebuah karya. bagi sebagian mahasiswa
+memang terkesan sulit, Sehingga kemampuan mahasiswa dalam Bermusik
+sangatlah jarang oleh karna itu kemampuan kita harus terus di asah dan di latih
+agar dapat menghasilkan Sebuah karya musik yang berkualitas. oleh karena itu,
+dengan adanya  UKM RUMUS ini diharapkan dapat memfasilitasi mahasiswa
+yang berminat dalam bidang bermusik. UKM RUMUS akan mengadakan
+pelatihan – pelatihan bermusik bagi mahasiswa sehingga di harapkan
+mahasiswa mampu menghasilkan Sebuah karya yang berkualitas serta mampu
+berdaya guna dalam dunia Permusikan di tanah air.
+</p>
+  </div>
+</div>
+<div class="progres1">
+  <div class="progres2">
+    <p class="judul1"data-aos="fade-up"
+     data-aos-duration="1000">STRUKTUR KEORGANISASIAN UNIT KEGIATAN MAHASISWA UKM RUMUS</p>
+              <img src="Fhoto-struktur.jpg" class="fhoto-struktur">
+                <li><a href="fhoto.html"><img src="WltQ.gif"class="open"></a>
+         <div class="progres1">
+         <div class="progres2">
+         <img src=" giphy (3).gif"class="panah" >
+         </div>
+         </div>  
+	<p oncanplaythrough="#" class="open">Klik Open</p></li>
+    <p class="description">Wadah ini adalah Unit Kegiatan Mahasiswa
+bermusik  yang dinamakan RUMUS ( RUANG MUSIK ).Meyakini bahwa tujuan dan cita-cita
+ mahasiswa Universitas Pamulang hanya didapat atas petunjuk Tuhan Yang
+ Maha Pemberi Petunjuk disertai usaha-usaha teratur, terencana dan penuh 
+kebijaksanaan, kami mahasiswa Universitas Pamulang, menghimpun diri dalam 
+Unit Kegiatan Mahasiswa Ruang Musik ( RUMUS ) Universitas Pamulang 
+</p>
+  </div>
+</div>
+
+<div class="progres1">
+  <div class="progres2">
+    <p class="judul1"data-aos="fade-up"
+     data-aos-duration="800">FORMULIR PENDAFTARAN UKM RUMUS ANGGOTA BARU.</p>
+<img src="Fhoto-pendaftaran.png" class="fhoto-daftar">
+        <div class="daftar">
+	<button class="btn-cta" onclick="redirdaftar()">DAFTAR</button>
+		<div class="progres1">
+         <div class="progres2">
+         <img src="giphy (3).gif"class="panah" >
+         </div>
+         </div>   
+	<p class="klik-daftar">Klik Daftar</p>
+        </div>
+   </div>
+</div>
+<div class="progres1">
+  <div class="progres2">
+    <p class="judul1"data-aos="fade-up"
+     data-aos-duration="800">PERSYARATAN PENDAFTARAN UKM RUMUS ANGGOTA BARU</p>
+
+    <p class="persyaratan">✅  Bagi calon anggota UKM RUMUS baru harap mengisi formulir sesuai intruksi yg telah diberikan.<br><br>✅ Rekan Mahasiswa yang dapat mengikuti pendaftaran anggota UKM RUMUS baru adalah Mahasiswa yang masih aktif di Universitas Pamulang ( UNPAM ).<br><br>✅Rekan Mahasiswa wajib mentaati dan mengikuti kebijakan-kebijakan yang telah diberikan oleh UKM RUMUS Universitas Pamulang.<br><br>✅
+	  Bagi Rekan Mahasiswa wajib mengikuti media sosial RUANG MUSIK ( RUMUS )sebagai tempat pusat informasi.</p>
+ </div>
+</div>
+<div class="progres1">
+  <div class="progres2">
+    <p class="judul1"data-aos="fade-up"
+     data-aos-duration="800">DOKUMENTASI UNIT KEGIATAN MAHASISWA RUMUS</p>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h3>UNIT KEGIATAN MAHASISWA RUMUS KAMPUS 1 MANAJEMEN</h3>
+                      <img src="     " class="fhoto-dokumentasi ">
+                      <h3>1</h3>
+                      </div>
+                    <div class="carousel-item">
+                      <h3>UNIT KEGIATAN MAHASISWA RUMUS KAMPUS VIKTOR</h3>
+                      <img src="       " class="fhoto-dokumentasi">
+                      <h3>2</h3>
+                    </div>
+                    <div class="carousel-item">
+                      <h3>UNIT KEGIATAN MAHASISWA RUMUS KAMPUS VIKTOR AUDOTORIUM</h3>
+                      <img src="      " class="fhoto-dokumentasi">
+                      <h3>3</h3>
+                    </div>
+                    </div>
+                    </div>
+        <li><a href="fhoto.html"><img src="WltQ.gif"class="open"></a>
+         <div class="progres1">
+         <div class="progres2">
+         <img src="giphy (3).gif"class="panah" >
+         </div>
+         </div>  
+	<p oncanplaythrough="#"class="open">klik Open</p></li>
+         
+         
+<div class="progres1">
+  <div class="progres2">
+    <p class="judul1"data-aos="fade-up"
+     data-aos-duration="800">PELATIHAN-PELATIHAN BIDANG KEAHLIAN</p>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h3>PELATIHAN BIDANG KEAHLIAN GUITAR BASS</h3>
+                      <img src="Guitar-bass.png" class="fhoto-dokumentasi">
+                      <h3>1</h3>
+                      </div>
+                    <div class="carousel-item">
+                      <h3>PELATIHAN BIDANG KEAHLIAN GUITAR</h3>
+                      <img src="Guitar.png" class="fhoto-dokumentasi">
+                      <h3>2</h3>
+                    </div>
+                    <div class="carousel-item">
+                      <h3>PELATIHAN BIDANG KEAHLIAN DRUM</h3>
+                      <img src="Drum.png" class="fhoto-dokumentasi">
+                      <h3>3</h3>
+                    </div>
+                     <div class="carousel-item">
+                      <h3>PELATIHAN BIDANG KEAHLIAN KEYBOARD/PIANO</h3>
+                      <img src="Keyboard.png" class="fhoto-dokumentasi">
+                      <h3>4</h3>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+              <li><a href="fhoto.html"><img src="WltQ.gif"class="open"></a>
+         <div class="progres1">
+         <div class="progres2">
+         <img src="giphy (3).gif"class="panah" >
+         </div>
+         </div>   
+	<p oncanplaythrough="#" class="open">Klik Open</p></li>
+         <div class="progres1">
+         <div class="progres2">
+         <img src="Fhoto-pestifal.png"class="lomba" >
+         </div>
+         </div>  
+         <div class="daftar">
+	<button class="btn-cta-daftar" onclick="redirdaftar()">DAFTAR</button>
+		<div class="progres1">
+         <div class="progres2">
+         <img src="giphy (3).gif"class="panah" >
+         </div>
+         </div>   
+	<p class="klik-daftar">Klik Daftar</p>
+        </div>
+<footer> <small>&copy;UNIT KEGIATAN MAHASISWA ( UKM ) UNIVERSITAS PAMULANG ( UNPAM ) RUANG MUSIK ( RUMUS ). </small></footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+			function redirdaftar() {
+				window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdqXownolFJTsqETIUTIU7SakaDcXjjiT_ZsMzIO2Z67uKtIg/viewform?usp=pp_url"}
+</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="fakeLoader.min.js"></script>
+        <div class="fakeLoader"></div>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $.fakeLoader({
-                    timeToHide:1200,
-                    bgColor:"#3498db",
-                    spinner:"spinner4"
+                    bgColor: '#e74c3c',
+                    spinner: 'spinner2'
                 });
             });
         </script>
-  <div class="fakeLoader"></div>
-    </body>
+</body>
 </html>
-
-
-
