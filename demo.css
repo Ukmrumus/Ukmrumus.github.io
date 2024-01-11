@@ -174,9 +174,27 @@
 	  width: 100%;
 	}
 	.panah{
-          max-width: 65px;
-          margin-top:-50px;
-          margin-bottom:-100px;
-          margin-left:170px;
-         }
+max-width: 65px;
+margin-top:-50px;
+margin-bottom:-100px;
+margin-left:170px;
+}
+.welcome{
+max-width: 265px;
+margin-top:-20px;
+margin-bottom:-100px;
+margin-left:60px;
+}
+.partitur{
+max-width: 265px;
+margin-top:-20px;
+margin-bottom:-250px;
+margin-left:70px;
+}
+.band{
+max-width: 265px;
+margin-top:-20px;
+margin-bottom:-550px;
+margin-left:70px;
+}
   }
