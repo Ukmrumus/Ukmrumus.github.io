@@ -173,4 +173,10 @@
 	  display: block;
 	  width: 100%;
 	}
+	.panah{
+max-width: 65px;
+margin-top:-50px;
+margin-bottom:-100px;
+margin-left:170px;
+}
   }
