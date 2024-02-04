@@ -183,7 +183,7 @@ margin-left:125px;
             
             
             <div class="two">
-                <label><a href="  tampil_login.php ">Kembali Login?</a></label>
+                <label><a href="index.html">Kembali Login?</a></label>
             </div>
         </div>
     </div>
@@ -215,7 +215,7 @@ margin-left:125px;
         echo "<br><br><br><p>Data baru telah tersimpan</p>";
         if ($result) {
           // Redirect to the index.php page
-          header("Location:  tampil_login.php");
+          header("Location: index.html");
           exit;
         } else {
           echo "Gagal tersimpan.";
