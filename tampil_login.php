@@ -167,7 +167,7 @@ margin-left:125px;
                <label for="check"> Remember Me</label>
             </div>
             <div class="two">
-                <label><a href="register.html">Register?</a></label>
+                <label><a href="register.php">Register?</a></label>
             </div>
         </div>
     </div>
